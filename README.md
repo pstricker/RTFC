@@ -1,3 +1,6 @@
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Commercial License](https://img.shields.io/badge/license-commercial-yellow.svg)](#-commercial-use)
+
 # RealTimeForeCast (RTFC)
 
 🏌️‍♂️ **RealTimeForeCast** is a real-time web application for tracking stroke play golf tournaments with handicap-adjusted scoring. Built in .NET with Blazor and SignalR, it enables tournament admins to manage players, enter scores, and see leaderboards update live.
@@ -111,6 +114,3 @@ MIT License. See `LICENSE` file for details.
 RealTimeForeCast (RTFC) is available under the MIT License for open-source use.
 
 If you'd like to use RTFC in a commercial product or require extended support, please contact us to discuss a commercial license: [stricker.phil@gmail.com]
-
-[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Commercial License](https://img.shields.io/badge/license-commercial-yellow.svg)](#-commercial-use)
