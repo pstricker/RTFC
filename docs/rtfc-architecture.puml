@@ -1,0 +1,38 @@
+@startuml RTFC_Architecture
+
+skinparam rectangle {
+  BackgroundColor White
+  BorderColor Black
+}
+skinparam shadowing false
+skinparam defaultTextAlignment center
+
+actor "Admin User" as Admin
+
+rectangle "Blazor WebAssembly\n(Frontend)" as Blazor {
+}
+
+rectangle "SignalR Service" as SignalR {
+}
+
+rectangle "ASP.NET Core API" as API {
+}
+
+rectangle "Azure App Service" as AppService {
+}
+
+database "Azure PostgreSQL\n(Flexible Server)" as DB
+
+rectangle "Azure DNS +\nCustom Domain" as DNS {
+}
+
+' Connections
+Admin --> Blazor : Uses
+Blazor --> SignalR : Real-time comms
+Blazor --> API : Calls REST APIs
+API --> SignalR : Broadcast updates
+API --> DB : Reads/Writes Scores
+API --> AppService : Deployed On
+DNS --> AppService : Routes traffic
+
+@enduml

@@ -15,6 +15,10 @@
 - **Authentication**: ASP.NET Identity (admin only)
 - **Hosting**: Azure App Service & Azure Database for PostgreSQL
 
+## 🏗️ RTFC Architecture Overview
+
+![RTFC Architecture](docs/rtfc_architecture_diagram.png)
+
 ---
 
 ## 🎯 Features
@@ -50,7 +54,7 @@ Create a `.env` or `appsettings.Development.json` with connection strings:
 Run migrations:
 
 ```bash
-cd GolfTracker.Api
+cd RealTimeForeCaster.Api
 dotnet ef database update
 ```
 
@@ -58,13 +62,13 @@ dotnet ef database update
 
 **Backend**:
 ```bash
-cd GolfTracker.Api
+cd RealTimeForeCaster.Api
 dotnet run
 ```
 
 **Frontend**:
 ```bash
-cd GolfTracker.Web
+cd RealTimeForeCaster.Web
 dotnet run
 ```
 
@@ -76,8 +80,8 @@ Navigate to `https://localhost:5001` or whatever port Blazor is using.
 
 ```text
 RTFC/
-├── GolfTracker.Api/         # ASP.NET Core Web API + SignalR
-├── GolfTracker.Web/         # Blazor WebAssembly client
+├── RealTimeForeCaster.Api/         # ASP.NET Core Web API + SignalR
+├── RealTimeForeCaster.Web/         # Blazor WebAssembly client
 ├── README.md
 ```
 
