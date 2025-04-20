@@ -1,0 +1,42 @@
+# Handle line endings automatically
+* text=auto
+
+# Normalize line endings for common file types
+*.cs text diff=csharp
+*.razor text
+*.cshtml text
+*.html text
+*.css text
+*.js text
+*.json text
+*.ts text
+*.yml text
+*.yaml text
+*.xml text
+*.md text
+*.svg text
+
+# Treat binaries as binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.ttf binary
+*.woff binary
+*.woff2 binary
+
+# GitHub language stats tuning
+*.razor linguist-language=HTML
+*.cs linguist-language=C#
+*.bicep linguist-language=HCL
+*.tf linguist-language=HCL
+*.sql linguist-language=SQL
+*.md linguist-documentation
+
+# Keep CRLF endings for Windows shell scripts
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# Keep LF for Unix shell scripts
+*.sh text eol=lf
